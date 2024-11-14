@@ -40,7 +40,7 @@ const Navbar = () => {
              <span className="relative z-10" >Contact me</span> <span 
              className=" absolute inset-0 bg-blue-950 transition-transform duration-500 ease-in-out transform -translate-x-full group-hover:translate-x-0"></span> </Link>
 
-            <NavLink to=""  smooth={true}  duration={1200}  offset={-70}  activeClass="active"  
+            <NavLink to="/resume"  smooth={true}  duration={1200}  offset={-70}  activeClass="active"  
             className="bg-gradient-to-r from-orange-500 to-orange-800 hover:bg-gradient-r hover:from-orange-400 hover:to-orange-700 focus focus:outline-none active:focus:ring-1 transition-all duration-50 ease-in-out py-2 px-3 rounded-lg hover:cursor-pointer">Resume</NavLink>
           </div>
 
@@ -74,8 +74,8 @@ const Navbar = () => {
               className="relative overflow-hidden bg-transparent  group transition-all duration-500 ease-in-out py-2 px-3 border rounded-lg border-blue-900 hover:cursor-pointer"> 
               <span className="relative z-10">Contact me</span><span 
               className=" absolute inset-0 bg-blue-900 transition-transform duration-500 ease-in-out transform -translate-x-full group-hover:translate-x-0"></span></Link>
-              <Link to="HeroSection"   onClick={toggleNavbar} smooth={true}  duration={1200}  offset={-70}  activeClass="active" 
-              className="py-2 px-3 rounded-md bg-gradient-to-r from-orange-500 to-orange-800 hover:bg-gradient-to-r hover:from-orange-400 hover:to-orange-700 hover:cursor-pointer">Resume</Link>
+              <NavLink to="/resume"   onClick={toggleNavbar} smooth={true}  duration={1200}  offset={-70}  activeClass="active" 
+              className="py-2 px-3 rounded-md bg-gradient-to-r from-orange-500 to-orange-800 hover:bg-gradient-to-r hover:from-orange-400 hover:to-orange-700 hover:cursor-pointer">Resume</NavLink>
             </div>
           </div>
         )}

@@ -30,7 +30,7 @@ const Project = () => {
       </div>
 
       <div className="flex justify-center items-center text-center">
-        <a href="./Pages/Allproject.jsx"
+        <a href="/project"
         className="inline-flex justify-center items-center text-center font-medium  h-12 p-5 m-10 text-xl hover:bg-green-900 border border-blue-950 shadow-md shadow-orange-500 rounded-lg transition duration-200 tracking-wide hover:-translate-y-1">
            More Projects <LuExternalLink className="ml-4" /> </a>
       </div>

@@ -1,8 +1,9 @@
+import React from 'react'
 
 const Project = () => {
   return (
     <div>
-      My more projects
+      all Projects
     </div>
   )
 }
