@@ -7,7 +7,7 @@ const Project = () => {
       <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center my-8 tracking-wide bg-gradient-to-r from-orange-500  to-red-800 text-transparent bg-clip-text">
         Projects
       </h2>
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap justify-center items-center">
         {projectPageOptions.map((option, index) => (
           <div key={index} className="w-full sm:w-1/2 lg:w-1/3 p-2">
             <div className="border border-neutral-700 shadow-md shadow-orange-50 rounded-lg hover:-translate-y-1">
