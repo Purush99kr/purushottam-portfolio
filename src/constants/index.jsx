@@ -68,21 +68,30 @@ export const aboutItems = [
 export const projectOptions = [
   {
     video: video1,
-    title: "Password generator",
-    text: "This project is created using React.js. Here user can generate random password of required size. User can also include numbers and special Characters in Password. Also User can Copy the Generated Password ",
+    title: "Weather Viewer",
+    text: "This project is created by using html, css & javascript. Here user can get the live weather conditions by providing the locations inside the input option. In order to fetch the live weather condition weather API is used. ",
 
   },
-  {
-    video: video1,
-    title: "Password generator",
-    text: "This project is created using React.js. Here user can generate random password of required size. User can also include numbers and special Characters in Password. Also User can Copy the Generated Password",
 
-  },
   {
     video: video2,
-    title: "Password generator",
-    text: "This project is created using React.js. Here user can generate random password of required size. User can also include numbers and special Characters in Password. Also User can Copy the Generated Password",
+    title: "Age Calculator",
+    text: "This project is created by using html, css & javascript. Here user can get their age by providing DOB. In order to fetch the age of the user after providing their date of birth Date & Time functionality is used. ",
   },
 ];
 
+export const projectPageOptions = [
+  {
+    video: video1,
+    title: "Weather Viewer",
+    text: "This project is created by using html, css & javascript. Here user can get the live weather conditions by providing the locations inside the input option. In order to fetch the live weather condition weather API is used. ",
+
+  },
+
+  {
+    video: video2,
+    title: "Age Calculator",
+    text: "This project is created by using html, css & javascript. Here user can get their age by providing DOB. In order to fetch the age of the user after providing their date of birth Date & Time functionality is used. ",
+  },
+];
 

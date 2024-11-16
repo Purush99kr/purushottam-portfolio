@@ -1,6 +1,6 @@
 import Navbar from "./Navbar";
 import HeroSection from "./HeroSection";
-import Workflow from "./About";
+import About from "./About";
 import Footer from "./Footer";
 import Testimonials from "./Testimonials";
 import Project from "./Project";
@@ -13,7 +13,7 @@ const main = () => {
       <Navbar />
       <div className="max-w-7xl pt-5 mx-auto lg:pt-14 px-6">
         <HeroSection />
-        <Workflow />
+        <About />
         <Project />
         <Testimonials />
         <Contact  />
