@@ -56,7 +56,7 @@ const Contact = () => {
               </div>
               <div className="inline-flex space-x-4 items-center text-black">
                 <IoMdMail className="text-xl" />
-                <span>purushottam9934@gmail.com</span>
+                <span>purushottam.portfolio@gmail.com</span>
               </div>
               <div className="inline-flex space-x-4 items-center text-black">
                 <FaMapMarkerAlt className=" text-xl" />
