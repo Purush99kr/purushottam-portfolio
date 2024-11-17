@@ -70,14 +70,14 @@ export const projectOptions = [
     video: video1,
     title: "Weather Viewer",
     text: "This project is created by using html, css & javascript. Here user can get the live weather conditions by providing the locations inside the input option. In order to fetch the live weather condition weather API is used. ",
-    url: "https://www.youtube.com/",
+    url: "https://weather-application-pk.vercel.app/",
   },
 
   {
     video: video2,
     title: "Age Calculator",
     text: "This project is created by using html, css & javascript. Here user can get their age by providing DOB. In order to fetch the age of the user after providing their date of birth Date & Time functionality is used. ",
-    url: "https://www.youtube.com/",
+    url: "https://age-calculator-pk.vercel.app/",
   },
 ];
 
@@ -86,14 +86,14 @@ export const projectPageOptions = [
     video: video1,
     title: "Weather Viewer",
     text: "This project is created by using html, css & javascript. Here user can get the live weather conditions by providing the locations inside the input option. In order to fetch the live weather condition weather API is used. ",
-    url: "https://www.youtube.com/",
+    url: "https://weather-application-pk.vercel.app/",
   },
 
   {
     video: video2,
     title: "Age Calculator",
     text: "This project is created by using html, css & javascript. Here user can get their age by providing DOB. In order to fetch the age of the user after providing their date of birth Date & Time functionality is used. ",
-    url: "https://www.youtube.com/",
+    url: "https://age-calculator-pk.vercel.app/",
   },
 ];
 
