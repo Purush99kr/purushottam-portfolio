@@ -52,11 +52,11 @@ const Contact = () => {
             <div className="flex flex-col">
               <div className="inline-flex space-x-4 items-center text-black">
                 <MdWifiCalling className="text-xl" />
-                <span>+91-9876543210</span>
+                <span>+91-6209087757</span>
               </div>
               <div className="inline-flex space-x-4 items-center text-black">
                 <IoMdMail className="text-xl" />
-                <span>info@yourdomain.com</span>
+                <span>purushottam9934@gmail.com</span>
               </div>
               <div className="inline-flex space-x-4 items-center text-black">
                 <FaMapMarkerAlt className=" text-xl" />
