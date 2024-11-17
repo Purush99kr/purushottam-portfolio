@@ -24,9 +24,9 @@ const Project = () => {
                 <p className="bg-neutral-900 rounded-lg  text-sm font-thin pt-0 mt-0 p-1">
                   {option.text}</p>
 
-                <Link to="Project"
+                <NavLink target="_blank" to={option.url}
                 className="inline-flex justify-center items-center text-center font-medium w-full h-12 p-5 mt-2 text-xl hover:bg-orange-500 hover:text-black border border-orange-900 rounded-lg transition duration-200 tracking-wide hover:-translate-y-1 cursor-pointer">
-                 Live Demo <LuExternalLink className="ml-4" /> </Link>
+                 Live Demo <LuExternalLink className="ml-4" /> </NavLink>
             </div>
           </div>
         ))}
@@ -34,7 +34,7 @@ const Project = () => {
 
       <div className="flex justify-center items-center text-center">
         <NavLink to="/project"
-        className="inline-flex justify-center items-center text-center font-medium  h-12 p-5 m-10 text-xl hover:bg-green-900 border border-blue-950 shadow-md shadow-orange-500 rounded-lg transition duration-200 tracking-wide hover:-translate-y-1">
+        className="inline-flex justify-center items-center text-center font-medium  h-12 p-5 m-10 text-xl border border-blue-950 shadow-md shadow-orange-500 rounded-lg transition duration-200 tracking-wide hover:-translate-y-1">
            More Projects <LuExternalLink className="ml-4" /> </NavLink>
       </div>
     </div>

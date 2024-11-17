@@ -9,10 +9,10 @@ import video1 from "../assets/video1.mp4";
 import video2 from "../assets/video2.mp4";
 
 export const navItems = [
-  { title: "Home", text: "HeroSection" },
-  { title: "About Me", text: "About" },
-  { title: "Projects", text: "Project" },
-  { title: "Testimonials", text: "Testimonials" },
+  { title: "Home", text: "HeroSection", path: "/"},
+  { title: "About Me", text: "About", path: "/"},
+  { title: "Projects", text: "Project", path: "/"},
+  { title: "Testimonials", text: "Testimonials", path: "/"},
 ];
 
 export const testimonials = [
@@ -70,13 +70,14 @@ export const projectOptions = [
     video: video1,
     title: "Weather Viewer",
     text: "This project is created by using html, css & javascript. Here user can get the live weather conditions by providing the locations inside the input option. In order to fetch the live weather condition weather API is used. ",
-
+    url: "https://www.youtube.com/",
   },
 
   {
     video: video2,
     title: "Age Calculator",
     text: "This project is created by using html, css & javascript. Here user can get their age by providing DOB. In order to fetch the age of the user after providing their date of birth Date & Time functionality is used. ",
+    url: "https://www.youtube.com/",
   },
 ];
 
@@ -85,13 +86,14 @@ export const projectPageOptions = [
     video: video1,
     title: "Weather Viewer",
     text: "This project is created by using html, css & javascript. Here user can get the live weather conditions by providing the locations inside the input option. In order to fetch the live weather condition weather API is used. ",
-
+    url: "https://www.youtube.com/",
   },
 
   {
     video: video2,
     title: "Age Calculator",
     text: "This project is created by using html, css & javascript. Here user can get their age by providing DOB. In order to fetch the age of the user after providing their date of birth Date & Time functionality is used. ",
+    url: "https://www.youtube.com/",
   },
 ];
 

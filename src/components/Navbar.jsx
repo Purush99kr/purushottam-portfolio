@@ -29,7 +29,15 @@ const Navbar = () => {
                 duration={1200} 
                 offset={-70} 
                 activeClass="active" 
-                className="hover:text-red-800 hover:cursor-pointer">{item.title}</Link>
+                className="hover:text-red-800 hover:cursor-pointer"  
+
+                onClick={() => {
+                  if (window.location.pathname !== item.path) {
+                    window.location.href = item.path;
+                  }
+                }}
+                
+                >{item.title}</Link>
               </li>
             ))}
           </ul>

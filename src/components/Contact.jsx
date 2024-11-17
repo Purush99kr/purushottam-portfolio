@@ -3,8 +3,38 @@ import { IoMdMail } from "react-icons/io";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaSquareGithub, FaLinkedin, FaInstagram,FaTwitter, FaFacebook } from "react-icons/fa6";
 import { BsFillSendFill } from "react-icons/bs";
+import Swal from 'sweetalert2'
 
 const Contact = () => {
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "a1c40f78-4316-4653-bbce-63e5094578dc");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: json
+    }).then((res) => res.json());
+
+    if (res.success) {
+      Swal.fire({
+        title: "Success!",
+        text: "Message has been sent successfully!",
+        icon: "success",
+        confirmButtonColor: "#3085d6",
+      });
+    }
+  };
+
+
   return (
 
       <div name="Contact" className="mt-10 tracking-wide flex flex-col w-full min-h-screen justify-center items-center">
@@ -45,16 +75,16 @@ const Contact = () => {
 
           {/* contact form begins */}
           <div className="bg-black rounded-xl shadow-md shadow-orange-200  p-8 w-full ">
-            <form action="" method="" className="flex flex-col space-y-2 md:space-y-6  text-red-800">
-              <div className="shadow-md shadow-orange-200"><input type="text" placeholder="Your Name" 
-                className="ring-1 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:bg-black "  required/></div>
+            <form action="" onSubmit={onSubmit} method="POST" className="flex flex-col space-y-2 md:space-y-6  text-red-800">
+              <div><input type="text"  placeholder="Your Name" 
+                className="ring-1 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:bg-black focus:shadow-md focus:shadow-orange-100"  name="name" required/></div>
               <div><input type="text" placeholder="Your Email" 
-                className="ring-1 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:bg-black "  required/></div>
-              <div><input type="text" placeholder="Subject" 
-                className="ring-1 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:bg-black "  required/></div>
-              <div><textarea name="" id=""  rows={4} placeholder="Your Message" 
-                className="ring-1 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:bg-black " required></textarea></div>
-              <button type="submit" className="inline-flex items-center text-xl justify-center ring-1 w-full rounded-md px-4 py-2 outline-none text-black bg-gradient-to-r from-primary via-secondary to-primary hover:bg-gradient-to-r hover:from-green-600 hover:via-green-800 hover:to-green-600 hover:font-semibold hover:-translate-y-1 focus:ring-2">
+                className="ring-1 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:bg-black focus:shadow-md focus:shadow-orange-100" name="email" required/></div>
+              <div><input type="text" placeholder="Your contact" 
+                className="ring-1 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:bg-black focus:shadow-md focus:shadow-orange-100" name="contact" required/></div>
+              <div><textarea name="message" id=""  rows={4} placeholder="Your Message" 
+                className="ring-1 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:bg-black focus:shadow-md focus:shadow-orange-100"  required></textarea></div>
+              <button type="submit" className="inline-flex items-center text-xl justify-center ring-1 w-full rounded-md px-4 py-2 outline-none text-black bg-gradient-to-r from-primary via-secondary to-primary hover:bg-gradient-to-r hover:from-secondary hover:via-primary hover:to-secondary hover:font-semibold  focus:ring-2">
                 <BsFillSendFill /> Send Message</button>
             </form>
           </div>
